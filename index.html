@@ -15,7 +15,8 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             padding: 20px;
-            margin-top: 400px; /* Add 400px margin at the top */
+            margin-top: 400px;
+            margin-bottom: 400px;
         }
 
         .video-container {
@@ -33,8 +34,8 @@
         }
 
         .video-container.square {
-            width: 50%;
-            padding-bottom: 50%; /* 1:1 Aspect Ratio */
+            width: 48%;
+            padding-bottom: 48%; /* 1:1 Aspect Ratio */
         }
 
         .video-container iframe {
@@ -49,24 +50,24 @@
 
         .horizontal-stack {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 10px;
         }
 
         /* Sticky Compact Spotify Embed */
         .spotify-embed {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 300px; /* Adjust the width as needed */
-            height: 152px; /* Match the iframe height for the compact version */
-            z-index: 1000; /* Ensure it appears above other content */
+            bottom: 5px;
+            right: 5px;
+            width: 250px;
+            height: 90px;
+            z-index: 1000;
         }
 
         .spotify-embed iframe {
             width: 100%;
             height: 100%;
-            border-radius: 12px;
+            border-radius: 0px;
         }
     </style>
 </head>
@@ -74,57 +75,57 @@
 
     <!-- First 6 Videos in Full-Width Rows (16:9 Widescreen) -->
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557288?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557288?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557457?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557457?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 2" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557303?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557303?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 3" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557410?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557410?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 4" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001560288?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001560288?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 5" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557264?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557264?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 6" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <!-- Next 2 Videos (7 & 8) in Horizontal Stack, 1:1 Aspect Ratio -->
     <div class="horizontal-stack">
         <div class="video-container square">
-            <iframe src="https://player.vimeo.com/video/1001424675?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1001424675?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 7" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="video-container square">
-            <iframe src="https://player.vimeo.com/video/1001424655?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1001424655?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 8" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- 9th Video in Full-Width Row (16:9 Widescreen) -->
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557422?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557422?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 9" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <!-- 10th and 11th Videos in Horizontal Stack, 1:1 Aspect Ratio -->
     <div class="horizontal-stack">
         <div class="video-container square">
-            <iframe src="https://player.vimeo.com/video/1001424767?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1001424767?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 10" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="video-container square">
-            <iframe src="https://player.vimeo.com/video/1001424696?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1001424696?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 11" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- 12th Video in Full-Width Row (16:9 Widescreen) -->
     <div class="video-container widescreen">
-        <iframe src="https://player.vimeo.com/video/1001557375?autoplay=1&muted=1&loop=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/1001557375?autoplay=1&muted=1&loop=1&background=1&controls=0" title="Video 12" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <!-- Sticky Compact Spotify Embed -->
     <div class="spotify-embed">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2zuSiqrcVqdK8q3Pj1acz6?utm_source=generator" width="100%" height="90" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2zuSiqrcVqdK8q3Pj1acz6?utm_source=generator" width="100%" height="90" title="Spotify Playlist" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
 </body>
